@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        body {
+            margin: auto;
+            background: #2c3e50;
+            text-align: justify;
+            color: #fff;
+            font-size: 19px;
+        }
+
+        div {
+            width: 400px;
+            height: 400px;
+            background: #8e44ad;
+            position: relative;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 15px solid #aaa;
+            box-sizing: border-box;
+            padding-left: 20px;
+            padding-right: 40px;
+            transition: 1s;
+        }
+
+        div:before {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background: #8e44ad;
+            position: absolute;
+            top: 50%;
+            left: 94%;
+            transform: translateY(-50%) rotate(45deg);
+            border-top: 15px solid #aaa;
+            border-right: 15px solid #aaa;
+        }
+
+        div:after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background: #8e44ad;
+            position: absolute;
+            left: 50%;
+            top: 94%;
+            transform: translateX(-50%) rotate(45deg);
+            border-bottom: 15px solid #aaa;
+            border-right: 15px solid #aaa;
+        }
+
+        p:first-letter {
+            font-size: 30px;
+            font-weight: 600;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Sequi eius debitis, explicabo sit alias. Nostrum eos, a
+            distinctio ipsa, aut non dolor blanditiis vitae beatae,
+            nulla pariatur earum molestiae ab quos itaque cum rem
+            soluta! Perspiciatis iure debitis unde quae blanditiis
+            neque mollitia sit itaque vitae optio rerum consectetur
+            impedit error amet
+            aliquid aliquam debitis cupiditate iure rerum, maxime
+            qui! Accusamus, quibusdam cumque fugit! Quod iure ab
+            .</p>
+    </div>
+</body>
+
+</html>

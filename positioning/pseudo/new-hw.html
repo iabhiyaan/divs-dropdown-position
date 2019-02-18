@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Mukta');
+        @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+            background: #388E3C;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            background: #7C4DFF;
+            position: absolute;
+            top: 125px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 35px;
+            font-family: inherit;
+            color: white;
+            text-align: justify;
+            border: 15px solid #651FFF;
+        }
+
+        .box::before {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background: #7C4DFF;
+            position: absolute;
+            right: -10.5%;
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+            border-top: 15px solid #651FFF;
+            border-right: 15px solid #651FFF;
+        }
+
+        .box::after {
+            content: '';
+            width: 40px;
+            height: 40px;
+            background: #7C4DFF;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%) translateY(-33%) rotate(135deg);
+            border-top: 14px solid #651FFF;
+            border-right: 14px solid #651FFF;
+        }
+        
+        .box:hover {
+            box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.411);
+            transition: 1s;
+        }
+        .box:hover::before,
+        .box:hover::after {
+            box-shadow: 5px -5px 2px 3px rgba(0, 0, 0, 0.356);
+            transition: 1.4s;
+        }
+        p::first-line {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+        }
+        p::first-letter {
+           font-size: 1.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore atque quis ipsa possimus voluptates
+            a
+            sit explicabo praesentium. Nobis distinctio ex saepe, quos amet vel illo ipsa eaque facere iure Lorem
+            ipsum
+            dolor sit amet, consectetur adipisicing elit. Earum odio repellat magnam explicabo aperiam omnis
+            excepturi
+            voluptatum error distinctio. Dicta enim laboriosam exercitationem deleniti architecto, officiis
+            sapiente
+            veritatis magnam adipisci.
+        </p>
+    </div>
+</body>
+
+</html>

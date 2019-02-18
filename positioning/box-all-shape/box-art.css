@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+}
+
+.row {
+    position: relative;
+    padding: 100px;
+}
+
+.box {
+    
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+}
+
+.box-1 {
+    background: #1E88E5;
+    margin-right: 5rem;
+    position: relative;
+}
+
+.box-2 {
+    background: #00897B;
+    position: relative;
+}
+.left-tri {
+    width: 30px;
+    border-top: 30px solid transparent;
+    border-right: 30px solid #e6dc2a;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    position: absolute;
+    top: 117px;
+    right: 300px;
+}
+
+.right-tri {
+    width: 30px;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #e6dc2a;
+    position: absolute;
+    top: 117px;
+    left: 300px;
+}
+
+
+.top-tri {
+    width: 30px;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #e6dc2a;
+    border-left: 30px solid transparent;
+    position: absolute;
+    bottom:300px;
+    left: 120px;
+}
+
+
+.bottom-tri {
+    width: 30px;
+    border-top: 30px solid #e6dc2a;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    position: absolute;
+    top: 300px;
+    left: 120px;
+}
+
+.left-tri-2 {
+    width: 30px;
+    border-top: 30px solid transparent;
+    border-right: 30px solid #E300A5;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    position: absolute;
+    top: 117px;
+    right: 300px;
+}
+
+.right-tri-2 {
+    width: 30px;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #E300A5;
+    position: absolute;
+    top: 117px;
+    left: 300px;
+}
+
+
+.top-tri-2 {
+    width: 30px;
+    border-top: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #E300A5;
+    border-left: 30px solid transparent;
+    position: absolute;
+    bottom:300px;
+    left: 120px;
+}
+
+
+.bottom-tri-2 {
+    width: 30px;
+    border-top: 30px solid #E300A5;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    position: absolute;
+    top: 300px;
+    left: 120px;
+}

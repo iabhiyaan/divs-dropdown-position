@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .clearfix {
+            clear: both;
+        }
+        .container  {
+            background: yellow;
+            height: 1200px;
+        }
+        .container p {
+            padding-left: 60px;
+        }
+        h1 {
+            font-size: 14px;
+        }
+        .row {
+            background: red;
+            border: 2px solid black;
+            width: 90%;
+            margin: auto;
+        }
+        .header {
+            padding: 30px;
+        }
+        .header--logo {
+            background: #00ffff;
+            float: left;
+            width:15%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main--body {
+            background: purple;
+            width: 75%;
+            height: 100px;
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main--body__content {
+            border: 2px solid black;
+            width: 80%;
+            height: 80px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .toolbar {
+            margin-top: 30px;
+            background: gray;
+            width: 100%;
+            padding: 23px 10px;
+            align-items: center;
+        }
+        .toolbar-body {
+            border: 1px solid white;
+            width: 100%;
+            background: #fff;
+            margin-top: 12px;
+        }
+
+        .canvas {
+            background: blue;
+            border: 2px solid red;
+            margin-top: 50px;
+            width: 90%;
+            padding: 50px 20px;
+            margin-left: 70px;
+        }
+
+        .nav { margin-right: 26px; width: 30%; float: left; background: lightblue; border: 1px solid red; padding:30px;  }
+        .nav-main{padding-top: 100px; background: green; outline: 1px solid black; padding: 10px;}
+        .nav-main-title,
+        .nav-main-body {
+            outline: 1px solid black;
+            padding: 5px;
+            margin-top: 10px;
+            background: #fff;
+        }
+        .nav-ads {
+            background: blue;
+            padding:12px;
+            margin-top: 16px;
+        }
+
+        #nav-ads {padding-bottom: 100px;}
+
+        #content {background: red;}
+        #sidebar-main {padding-bottom: 155px;
+        background: lightgreen;}
+        
+        .footer {
+            padding: 15px 20px;
+            outline: 1px solid black;
+            margin-top: 50px;
+            width: 90%;
+            margin-left: 70px;
+            background: red;
+        }
+        #content-info{background: lightgreen;}
+        #content-main {
+            background: yellow;
+        }
+        .footer-title {background: white; padding: 1vw; margin-bottom: 12px;
+            outline: 1px solid black;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>container</p>
+        <div class="row">
+            <div class="header">
+                <div class="header--logo">
+                    header-logo
+                </div>
+                <div class="main--body">
+                    <div class="main--body__content">
+                        header--main--body
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="toolbar">
+                    <h1>toolbar</h1>
+                    <div class="toolbar-body">
+                        toolbar-body
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="canvas">
+            <h1>canvas</h1>
+            <div class="nav">
+                <h1>nav</h1>
+                
+                <div class="nav-main">
+                        <h1>nav-main</h1>
+                    <div class="nav-main-title"><h1>nav-main-title</h1></div>
+                    <div class="nav-main-body"><h1>nav-main-body</h1></div>
+                </div>
+                <div class="nav-ads"id="nav-ads">
+                    <h1>nav-ads</h1>
+                    <div class="nav-main-title"><h1>nav-ads-title</h1></div>
+                    <div class="nav-main-body"><h1>nav-ads-body</h1></div>
+                </div>
+            </div>
+           
+
+            <div class="nav" id="content">
+                    <h1>content</h1>
+                    
+                    <div class="nav-main">
+                            <h1>breadcrumb</h1>
+                        <div class="nav-main-title"><h1>breadcrumb-selected</h1></div>
+                    </div>
+                    <div class="nav-ads" id="content-info">
+                        <h1>content-info</h1>
+                        <div class="nav-main-title"><h1>content-info-title</h1></div>
+                        <div class="nav-main-body"><h1>content-info-body</h1></div>
+                    </div>
+                    <div class="nav-ads" id="content-main">
+                            <h1>content-main</h1>
+                            <div class="nav-main-title"><h1>content-main-title</h1></div>
+                            <div class="nav-main-body"><h1>content-main-body</h1></div>
+                        </div>
+            </div>
+
+
+            <div class="nav" id="nav-ads">
+                    <h1>sidebar</h1>
+                    
+                    <div class="nav-main" id="sidebar-main">
+                            <h1>sidebar-main</h1>
+                        <div class="nav-main-title"><h1>sidebar-main-title</h1></div>
+                        <div class="nav-main-body"><h1>sidebar-main-body</h1></div>
+                    </div>
+            </div>
+
+                <div class="clearfix"></div>
+
+        </div>
+
+       <div class="footer">
+           <h1>footer</h1>
+        <div class="footer-title">
+            <h1>footer-title</h1>
+        </div>
+        <div class="footer-title">
+                <h1>footer-body</h1>
+            </div>
+       </div>
+    </div>
+   
+</body>
+</html>

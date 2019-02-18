@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            position: relative;
+            padding: 20px;
+        }
+
+        h1::after {
+            content: "\f02e";
+            position: absolute;
+            font-family: FontAwesome;
+            top: 65px;
+            left: 6%;
+            -webkit-text-stroke: 5px white;
+        }
+
+        h1::before {
+            content: '';
+            position: absolute;
+            top: 76px;
+            left: 4%;
+            width: 75px;
+            height: 2px;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+</body>
+
+</html>
